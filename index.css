@@ -1,22 +1,25 @@
 * {
     box-sizing: border-box;
   }
-  
+
+html {
+    background-color: #ff7c7c; 
+}
 body {
     display:flex;
     flex-direction: column;
     font-family: "Open Sans",
     sans-serif; 
     font-size: 20px;
-    color: #444;
     text-align: center;
     line-height: 1.5;
+    font: #1b262c;
   }
   
 nav,
 footer {
     padding: 1% 0;
-    background-color: #aaa;
+    background-color: #21243d;
   }
   
 nav {
@@ -25,6 +28,16 @@ nav {
     left: 0;
     right: 0;
     z-index: 10;
+    text-align: right;
+    padding: 20px;
+  }
+
+  button {
+      border: none;
+      border-radius: 5px;
+      font-size: 17px;
+      font-family: 'Kanit';
+      background-color: #88e1f2;
   }
   
   
@@ -32,39 +45,62 @@ nav {
 header {
     padding: 12% 0;
     display: block;
-    
+    padding-right: 20px;
+    padding-left: 20px;
+    font-family: 'Dosis';
     
   }
   
 section {
     min-height: 200px;
     padding:20px;
-    background-color: #bbb;
+    background-color: #00a8cc;
+    font-family: 'Kanit'
   }
   
 section:nth-child(even) {
-    background-color: #ddd;
+    background-color: #ffd082;
   }
+
+#head-image {
+    margin-top: 30px;;
+}
 
 #head-image, #app-image {
     height: 200px;
     width: 200px;
+    border-radius: 10px;
   }
 
 .bio {
     font-size: 16px;
-    padding: 15px;
+    text-align: justify;
+    font-family: 'Kanit'
     
 }
+
+.app-description {
+    text-align: justify;
+    padding: 15px;
+    font-family: 'Dosis';
+}
+
+.github {
+    height: 16px;
+}
+
 h1 {
     font-size: 20px;
     word-wrap: break-word;   
+}
+h3 {
+    margin-top: 50px;
 }
 
 @media (min-width: 768px) {
     header {
       grid-template-columns: 375px 370px;
-      justify-content: space-around;
+      
     }
   
     h1 {
@@ -80,7 +116,7 @@ h1 {
       padding: 10px;
     }
   
-    img {
+    #app-image {
       width: 250px;
       height: 250px;
     }
@@ -91,21 +127,24 @@ h1 {
     }
   
     h3 {
-      grid-column: 1/3;
+      font-size: 30px;
     }
   
     h4{
-      grid-row:3;
-      grid-column: 1/3;
+      font-size: 25px;
+    }
+
+    .app-description {
+        font-size: 20px;
+        font: bold'
     }
 } 
   
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1500px) {
     header {
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: space-evenly;
+     display: block;
+     
     }
   
     h1 {
@@ -117,13 +156,23 @@ h1 {
   
     #head-image {
       width: 350px;
-      height: 300px;
+      height: 400px;
+      float: right;
       
     }
   
     .bio {
       font-size: 30px;
       padding: 15px;
+      width: 1000px;
+      display:block;
+      margin-left: 10%;
+    
+    }
+
+    .app-description {
+        width: 1000px;
+        margin-left: 200px;
     }
   
   
@@ -133,9 +182,14 @@ h1 {
     }
     
     #app-image {
-      float: left;
+      float: right;
       width: 400px;
-      height: 500px;
+      height: 400px;
+    }
+
+    .linkedin, .github {
+        height: 24px;
+        justify-content: space-evenly;
     }
 
     p {
