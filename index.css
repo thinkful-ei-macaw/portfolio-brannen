@@ -16,10 +16,16 @@ body {
     font: #1b262c;
   }
   
+.css,.js {
+    height: 32px;
+}
+
+
+
 nav,
 footer {
     padding: 1% 0;
-    background-color: #21243d;
+    background-color: #3c416e;
   }
   
 nav {
