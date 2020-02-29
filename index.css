@@ -79,7 +79,7 @@ section:nth-child(even) {
     margin-top: 30px;;
 }
 
-#head-image, #app-image {
+#head-image, .app-image {
     height: 200px;
     width: 200px;
     border-radius: 10px;
@@ -98,7 +98,7 @@ section:nth-child(even) {
     font-family: 'Dosis';
 }
 
-.github {
+.github, .email {
     height: 16px;
 }
 
@@ -163,7 +163,7 @@ h2 {
 } 
   
 
-  @media (min-width: 1500px) {
+  @media (min-width: 1200px) {
     header {
      display: block;
      
