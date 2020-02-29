@@ -26,7 +26,12 @@ nav,
 footer {
     padding: 1% 0;
     background-color: #3c416e;
+    color: #ffd082;
   }
+
+footer>a{
+  color: #ffd082;
+}
   
 nav {
     position: fixed;
@@ -50,13 +55,25 @@ header {
 section {
     min-height: 200px;
     padding:20px;
-    background-color: #00a8cc;
+    background-color: #ffd082;
     font-family: 'Kanit'
   }
   
 section:nth-child(even) {
-    background-color: #ffd082;
+    background-color: #00a8cc;
   }
+
+.live, .repo {
+  color: #002517;
+}
+
+.repo:nth-child(odd){
+  color: #172617;
+}
+
+.live:nth-child(odd){
+  color: #172617;
+}
 
 #head-image {
     margin-top: 30px;;
@@ -70,13 +87,13 @@ section:nth-child(even) {
 
 .bio {
     font-size: 16px;
-    text-align: justify;
+    text-align: left;
     font-family: 'Kanit'
     
 }
 
 .app-description {
-    text-align: justify;
+    text-align: left;
     padding: 15px;
     font-family: 'Dosis';
 }
@@ -90,7 +107,7 @@ h1 {
     font-size: 20px;
     word-wrap: break-word;   
 }
-h3 {
+h2 {
     margin-top: 50px;
 }
 
@@ -131,11 +148,11 @@ h3 {
       justify-content: space-around;
     }
   
-    h3 {
+    h2 {
       font-size: 30px;
     }
   
-    h4{
+    h3{
       font-size: 25px;
     }
 
@@ -155,7 +172,7 @@ h3 {
     h1 {
       font-size: 35px;
     }
-    h4 {
+    h3 {
         padding: 20px;
     }
   
