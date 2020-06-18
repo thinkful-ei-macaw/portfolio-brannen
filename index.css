@@ -16,8 +16,10 @@ body {
     font: #1b262c;
   }
   
-.css,.js {
-    height: 32px;
+.tech {
+  display: flex;
+  flex-direction: row;
+  margin-left: 25%;
 }
 
 
@@ -51,6 +53,12 @@ header {
     font-family: 'Dosis';
     
   }
+
+.app {
+  display:flex;
+  flex-direction: column;
+  align-content: center;
+}
   
 section {
     min-height: 200px;
@@ -94,7 +102,7 @@ section:nth-child(even) {
 
 .app-description {
     text-align: left;
-    padding: 15px;
+    
     font-family: 'Dosis';
 }
 
@@ -209,7 +217,7 @@ h2 {
       height: 400px;
     }
 
-    .linkedin, .github {
+    .email, .linkedin, .github {
         height: 24px;
         justify-content: space-evenly;
     }
