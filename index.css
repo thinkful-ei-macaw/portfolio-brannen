@@ -3,7 +3,7 @@
   }
 
 html {
-    background-color: #ff7c7c; 
+    background-color: #8abfa6; 
 }
 body {
     display:flex;
@@ -19,7 +19,7 @@ body {
 .tech {
   display: flex;
   flex-direction: row;
-  margin-left: 25%;
+  justify-content: space-evenly;
 }
 
 
@@ -27,7 +27,7 @@ body {
 nav,
 footer {
     padding: 1% 0;
-    background-color: #3c416e;
+    background-color: #0c3b40;
     color: #ffd082;
   }
 
@@ -63,12 +63,12 @@ header {
 section {
     min-height: 200px;
     padding:20px;
-    background-color: #ffd082;
+    background-color: #f2a341;
     font-family: 'Kanit'
   }
   
 section:nth-child(even) {
-    background-color: #00a8cc;
+    background-color: #c1d9c7;
   }
 
 .live, .repo {
@@ -120,13 +120,26 @@ h2 {
 }
 
 .aboutme, .Projects, .Contact {
+  text-decoration: none;
   border: none;
+  margin: 3px;
       border-radius: 5px;
       font-size: 17px;
+      padding: 3px 6px;
       font-family: 'Kanit';
-      background-color: #88e1f2;
+      background-color: #c1d9c7;
 }
 
+@media (max-width: 375px) {
+  nav {
+    text-align: center;
+  }
+  .tech {
+    margin: 0;
+  }
+
+
+}
 @media (min-width: 768px) {
     header {
       grid-template-columns: 375px 370px;
@@ -202,6 +215,7 @@ h2 {
 
     .app-description {
         width: 1000px;
+        padding-right: 25px;
         margin-left: 200px;
     }
   
