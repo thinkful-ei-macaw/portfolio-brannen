@@ -17,48 +17,91 @@
       href="https://fonts.googleapis.com/css?family=Dosis&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css"
+    />
   </head>
   <body>
-    <nav role="navigation">
-      <a class="aboutme" href="#fragment-1">ABOUT ME</a>
-      <a class="Projects" href="#fragment-2">PROJECTS</a>
-      <a class="Contact" href="#fragment-3">CONTACT</a>
-    </nav>
-    <main role="main">
-      <header id="fragment-1" role="banner">
-        <img
-          id="head-image"
-          src="images/portfoliopicture1.jpg"
-          alt="Edited portrait of Brannen"
-        />
-        <h1>
-          Hello, I’m Brannen. I’m a full-stack developer and an avid problem
-          solver.
-        </h1>
-        <p class="bio">
-          I’m a full-stack web developer and recent Engineering Immersion
-          graduate from Thinkful. Coding and solving real-world problems
-          energize me. I thrive on learning, utilizing new skills, and
-          overcoming challenges. I dive into new projects with passion and
-          inspiring ideas. In my spare time, I’m an avid gamer who enjoys
-          staying physically fit by grilling meats and finding the right
-          training routines to use at the gym. I’m a fan of the backcountry and
-          will jump at any opportunity to go backpacking, roadtripping, or
-          simply hiking. I would love to find a team of motivated developers who
-          will push me to be my best, prodcue quality work together, and learn
-          new and valuable skills together.
-        </p>
+    <button class="nav-toggle" aria-label="toggle navigation">
+      <span class="hamburger"></span>Menu
+    </button>
+    <div class="navblock">
+      <nav class="nav">
+        <ul class="nav__list" class="nav__link">
+          <li class="nav__item" class="nav__link">
+            <a href="#fragment-1" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#fragment-2" class="nav__link">Projects</a>
+          </li>
+          <li class="nav__item">
+            <a href="#fragment-3" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <main>
+      <header id="fragment-1">
+        <div class="me">
+          <h1>
+            Hello, I’m Brannen. I’m a full-stack developer and an avid problem
+            solver.
+          </h1>
+          <div class="extrabio">
+            <p class="bio">
+              I’m a full-stack web developer and recent Engineering Immersion
+              graduate from Thinkful. Coding and solving real-world problems
+              energize me. I thrive on learning, utilizing new skills, and
+              overcoming challenges. I dive into new projects with passion and
+              inspiring ideas. In my spare time, I’m an avid gamer who enjoys
+              staying physically fit by grilling meats and finding the right
+              training routines to use at the gym. I’m a fan of the backcountry
+              and will jump at any opportunity to go backpacking, road-tripping,
+              or simply hiking. I would love to find a team of motivated
+              developers who will push me to be my best, produce quality work
+              together, and learn new and valuable skills together.
+            </p>
+
+            <img
+              id="head-image"
+              src="images/portfoliopicture1.jpg"
+              alt="Edited portrait of Brannen"
+            />
+          </div>
+          <div class="skills">
+            <div>
+              <h2>Front-end:</h2>
+              <p>Javascript, jQuery, React, HTML, CSS, Jest, Cypress</p>
+            </div>
+
+            <div>
+              <h2>Back-end:</h2>
+              <p>
+                Node, Express, Knex, PSQL, Mocha, Chai, Supertest, RESTful API
+              </p>
+            </div>
+            <div>
+              <h2>Other Tech:</h2>
+              <p>
+                VSCode, Heroku, Vercel, Integration testing, Postman, DBeaver,
+                Git, GitHub
+              </p>
+            </div>
+          </div>
+        </div>
       </header>
       <div id="fragment-2"></div>
 
       <section>
-        <img
-          src="images/dash2.png"
-          alt="picture showing the Clear mind app in action"
-          class="app-image"
-        />
         <div class="apps">
           <h2>Clear Mind</h2>
+          <img
+            src="images/dash2.png"
+            alt="picture showing the Clear mind app in action"
+            class="app-image"
+          />
           <p class="app-description">
             Explore your feelings and thoughts with daily journals and personal
             data tracking. This digital journaling application allows users to
@@ -97,13 +140,11 @@
 
           <div class="tech">
             <p>
-              Live:
               <a class="live" href="https://clear-mind.now.sh/" target="_blank"
                 >Live Link</a
               >
             </p>
             <p>
-              Server Repo:
               <a
                 class="repo"
                 href="https://github.com/thinkful-ei-macaw/clear-awareness-api"
@@ -112,7 +153,6 @@
               >
             </p>
             <p>
-              Client Repo:
               <a
                 class="repo"
                 href="https://github.com/thinkful-ei-macaw/clear-awareness-client"
@@ -124,19 +164,19 @@
         </div>
       </section>
       <section>
-        <img
-          src="images/NDcaloricchart.PNG"
-          alt="picture showing the NuutrEd app in action"
-          class="app-image"
-        />
         <div class="apps">
           <h2>NuutrEd</h2>
+          <img
+            src="images/NDcaloricchart.PNG"
+            alt="picture showing the NuutrEd app in action"
+            class="app-image"
+          />
           <p class="app-description">
             This application helps users get a better understanding of how many
             calories they should be eating in a day based upon basic biometric
-            and activity informaiton. This app provides mutliple charts set to
+            and activity information. This app provides mutliple charts set to
             different performance goals with corresponding caloric expenditures,
-            as well as allows users to track their weight using a wieght graph.
+            as well as allows users to track their weight using a weight graph.
           </p>
           <h3>
             Tech Used:
@@ -165,13 +205,11 @@
 
           <div class="tech">
             <p>
-              Live:
               <a class="live" href="https://nuutred.now.sh/" target="_blank"
                 >Live Link</a
               >
             </p>
             <p>
-              Server Repo:
               <a
                 class="repo"
                 href="https://github.com/thinkful-ei-macaw/nutred-server"
@@ -180,7 +218,6 @@
               >
             </p>
             <p>
-              Client Repo:
               <a
                 class="repo"
                 href="https://github.com/thinkful-ei-macaw/nutred-client"
@@ -193,13 +230,13 @@
       </section>
 
       <section>
-        <img
-          src="images/spaced-repetition-three.now.sh_.png"
-          alt="picture showing the language app in action"
-          class="app-image"
-        />
         <div class="apps">
           <h2>Spaced Repetition Language App</h2>
+          <img
+            src="images/spaced-repetition-three.now.sh_.png"
+            alt="picture showing the language app in action"
+            class="app-image"
+          />
           <p class="app-description">
             This is a Spanish translator app, that has been produced utilizing a
             linked list data structure, and a specific algorithm mentioned
@@ -236,7 +273,6 @@
 
           <div class="tech">
             <p>
-              Live:
               <a
                 class="live"
                 href="https://spaced-repetition-three.now.sh/"
@@ -245,7 +281,6 @@
               >
             </p>
             <p>
-              Server Repo:
               <a
                 class="repo"
                 href="https://github.com/thinkful-ei-macaw/SpacedRepition-server-VB"
@@ -254,7 +289,6 @@
               >
             </p>
             <p>
-              Client Repo:
               <a
                 class="repo"
                 href="https://github.com/thinkful-ei-macaw/SpacedRepition-client-VB"
@@ -268,18 +302,21 @@
     </main>
     <footer id="fragment-3" class="content-info">
       <h4>Contact</h4>
-      <a href="mailto:bpetit940@gmail.com"
-        ><img
-          alt="email"
-          src="images/http___pluspng.com_img-png_email-icon-png-circle-email-gmail-logo-mail-material-icon-download-png-512.png"
-          class="email"
-      /></a>
-      <a href="https://github.com/bpetit940" target="_blank"
-        ><img alt="github" src="images/GitHub-Mark-32px.png" class="github"
-      /></a>
-      <a href="https://www.linkedin.com/in/brannenpetit/" target="_blank"
-        ><img alt="linkedin" src="images/LI-In-Bug.png" class="github"
-      /></a>
+      <div class="contacticons">
+        <a href="mailto:bpetit940@gmail.com"
+          ><img
+            alt="email"
+            src="images/http___pluspng.com_img-png_email-icon-png-circle-email-gmail-logo-mail-material-icon-download-png-512.png"
+            class="email"
+        /></a>
+        <a href="https://github.com/bpetit940" target="_blank"
+          ><img alt="github" src="images/GitHub-Mark-32px.png" class="github"
+        /></a>
+        <a href="https://www.linkedin.com/in/brannenpetit/" target="_blank"
+          ><img alt="linkedin" src="images/LI-In-Bug.png" class="github"
+        /></a>
+      </div>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>
