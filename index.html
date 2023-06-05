@@ -1,321 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Brannen Petit's Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css"
-    />
-    <link rel="stylesheet" type="text/css" href="index.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Kanit&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Dosis&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css"
-    />
-  </head>
-  <body>
-    <button class="nav-toggle" aria-label="toggle navigation">
-      <span class="hamburger"></span>Menu
-    </button>
-    <div class="navblock">
-      <nav class="nav">
-        <ul class="nav__list nav__link">
-          <li class="nav__item nav__link">
-            <a href="#fragment-1" class="nav__link">About</a>
-          </li>
-          <li class="nav__item">
-            <a href="#fragment-2" class="nav__link">Projects</a>
-          </li>
-          <li class="nav__item">
-            <a href="#fragment-3" class="nav__link">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <main>
-      <header id="fragment-1">
-        <div class="me">
-          <h1>
-            Hello, I’m Brannen. I’m a full-stack developer and an avid problem
-            solver.
-          </h1>
-          <div class="extrabio">
-            <p class="bio">
-              I’m a full-stack web developer, an Engineering Immersion graduate
-              from Thinkful, and currently a Software Engineer at Tasksuite.
-              Coding and solving real-world problems energize me. I thrive on
-              learning, utilizing new skills, and overcoming challenges. I dive
-              into new projects with passion and inspiring ideas. In my spare
-              time, I’m an avid gamer who enjoys staying physically fit by
-              grilling meats and finding the right training routines to use at
-              the gym. I’m a fan of the backcountry and will jump at any
-              opportunity to go backpacking, road-tripping, or simply hiking. I
-              would love to find a team of motivated developers who will push me
-              to be my best, produce quality work together, and learn new and
-              valuable skills together.
-            </p>
+<head>
+  <title>Brannen Petit's Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="index.css" />
+  <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="navbar__logo">Brannen Petit</div>
+      <button class="navbar__toggle" aria-label="toggle navigation">
+        <span class="navbar__hamburger"></span>
+      </button>
+      <ul class="navbar__menu">
+        <li class="navbar__item"><a href="#about" class="navbar__link">About</a></li>
+        <li class="navbar__item"><a href="#experience" class="navbar__link">Experience</a></li>
+        <li class="navbar__item"><a href="#projects" class="navbar__link">Projects</a></li>
+        <li class="navbar__item"><a href="#contact" class="navbar__link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-            <img
-              id="head-image"
-              src="images/portfoliopicture1.jpg"
-              alt="Edited portrait of Brannen"
-            />
+  <main>
+    <section id="about-me" class="section">
+      <div class="about">
+        <h1 class="about__title">Hello, I’m Brannen. I’m a full-stack developer and an avid problem solver.</h1>
+        <div class="about__content">
+          <p class="about__bio">I am a passionate and experienced full-stack web developer with a diverse range of skills and expertise. I find great energy in coding and solving real-world problems, constantly seeking opportunities to learn and grow. Overcoming challenges is my driving force, as it allows me to push my boundaries and discover new possibilities.
+          </br></br>
+            Beyond my professional pursuits, I am an avid gamer, finding joy in exploring virtual worlds and engaging in immersive experiences. Additionally, I prioritize maintaining my physical fitness, dedicating time to staying active and healthy. Nature also holds a special place in my heart, and I am drawn to the serenity of the backcountry. Backpacking, road-tripping, and hiking are among my favorite activities, providing me with a sense of adventure and exploration.
+          </br></br>
+            In my career, I am eager to join a team of like-minded and motivated developers who are committed to delivering high-quality work. Collaborating with such a team would not only allow us to produce outstanding results together but also foster an environment of continuous learning and growth. I am enthusiastic about acquiring new and valuable skills that contribute to our collective success.</p>
+          <img class="about__image" src="images/portfoliopicture1.jpg" alt="Edited portrait of Brannen" />
+        </div>
+        <div class="about__skills">
+          <div>
+            <h2>Languages:</h2>
+            <p>Python, JavaScript, Ruby on Rails, TypeScript</p>
           </div>
-          <div class="skills">
-            <div>
-              <h2>Languages:</h2>
-              <p>Python, Javascript</p>
-            </div>
-            <div>
-              <h2>Front-end:</h2>
-              <p>React, jQuery, HTML, CSS, Jest, Cypress</p>
-            </div>
-
-            <div>
-              <h2>Back-end:</h2>
-              <p>
-                Node, Express, Knex, PSQL, Mocha, Chai, Supertest, RESTful API
-              </p>
-            </div>
-            <div>
-              <h2>Other Tech:</h2>
-              <p>
-                VSCode, Heroku, Vercel, Integration testing, Postman, DBeaver,
-                Git, GitHub, BitBucket, Odoo, MV*
-              </p>
-            </div>
+          <div>
+            <h2>Front-end:</h2>
+            <p>React.JS, Vue.js, Angular.js, Next.js, jQuery, HTML, CSS, Jest, Cypress</p>
+          </div>
+          <div>
+            <h2>Back-end:</h2>
+            <p>Node, Express, Knex, PSQL, Mocha, Chai, Supertest, RESTful API</p>
+          </div>
+          <div>
+            <h2>Other Tech:</h2>
+            <p>VSCode, Heroku, Vercel, Integration testing, Postman, DBeaver, Git, GitHub, BitBucket, Odoo, MV*, RSpec, Capybara, JEST, Unit Testing, AWS, Docker, Linux, R, MobX, Redux, Sentry, New Relic, Sentry</p>
           </div>
         </div>
-      </header>
-      <div id="fragment-2"></div>
-
-      <section>
-        <div class="apps">
-          <h2>Clear Mind</h2>
-          <img
-            src="images/dash2.png"
-            alt="picture showing the Clear mind app in action"
-            class="app-image"
-          />
-          <p class="app-description">
-            Explore your feelings and thoughts with daily journals and personal
-            data tracking. This digital journaling application allows users to
-            keep track of daily tasks, record inner thoughts, encourage mindful
-            acts, and track sleep and emotional patterns. Upon submitting a
-            journal entry, the user's dashboard will update to display emotion
-            and sleep data, allowing the user to see a visual representation of
-            their progress over time. The user can use the calendar on the
-            mindfulness center page to navigate to a specific day's journal and
-            update entries to their liking.
-          </p>
-          <h3>Tech Used:</h3>
-          <img src="images/iconfinder_HTML_Logo_65687.png" alt="html5 logo" />
-          <img
-            class="css"
-            src="images/iconfinder_121-css3_4202020.png"
-            alt="css logo"
-          />
-          <img
-            class="js"
-            src="images/iconfinder_187_Js_logo_logos_4373691.png"
-            alt="javascript logo"
-          />
-          <img
-            src="images/iconfinder_React.js_logo_1174949.png"
-            class="react"
-            alt="react logo"
-          />
-          <img
-            src="images/iconfinder_postgresql_4691328.png"
-            class="postgres"
-            alt="postgres"
-          />
-
-          <div class="tech">
-            <p>
-              <a class="live" href="https://clear-mind.now.sh/" target="_blank"
-                >Live Link</a
-              >
-            </p>
-            <p>
-              <a
-                class="repo"
-                href="https://github.com/thinkful-ei-macaw/clear-awareness-api"
-                target="_blank"
-                >Repo Link</a
-              >
-            </p>
-            <p>
-              <a
-                class="repo"
-                href="https://github.com/thinkful-ei-macaw/clear-awareness-client"
-                target="_blank"
-                >Repo Link</a
-              >
-            </p>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div class="apps">
-          <h2>NuutrEd</h2>
-          <img
-            src="images/NDcaloricchart.PNG"
-            alt="picture showing the NuutrEd app in action"
-            class="app-image"
-          />
-          <p class="app-description">
-            This application helps users get a better understanding of how many
-            calories they should be eating in a day based upon basic biometric
-            and activity information. This app provides mutliple charts set to
-            different performance goals with corresponding caloric expenditures,
-            as well as allows users to track their weight using a weight graph.
-          </p>
-          <h3>Tech Used:</h3>
-          <img src="images/iconfinder_HTML_Logo_65687.png" alt="html5 logo" />
-          <img
-            class="css"
-            src="images/iconfinder_121-css3_4202020.png"
-            alt="css logo"
-          />
-          <img
-            class="js"
-            src="images/iconfinder_187_Js_logo_logos_4373691.png"
-            alt="javascript logo"
-          />
-          <img
-            src="images/iconfinder_React.js_logo_1174949.png"
-            class="react"
-            alt="react logo"
-          />
-          <img
-            src="images/iconfinder_postgresql_4691328.png"
-            class="postgres"
-            alt="postgres"
-          />
-
-          <div class="tech">
-            <p>
-              <a class="live" href="https://nuutred.now.sh/" target="_blank"
-                >Live Link</a
-              >
-            </p>
-            <p>
-              <a
-                class="repo"
-                href="https://github.com/thinkful-ei-macaw/nutred-server"
-                target="_blank"
-                >Repo Link</a
-              >
-            </p>
-            <p>
-              <a
-                class="repo"
-                href="https://github.com/thinkful-ei-macaw/nutred-client"
-                target="_blank"
-                >Repo Link</a
-              >
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <div class="apps">
-          <h2>Spaced Repetition Language App</h2>
-          <img
-            src="images/spaced-repetition-three.now.sh_.png"
-            alt="picture showing the language app in action"
-            class="app-image"
-          />
-          <p class="app-description">
-            This is a Spanish translator app, that has been produced utilizing a
-            linked list data structure, and a specific algorithm mentioned
-            above. The user will see the words you get wrong more often to get
-            more practice with more difficult words. The user can see their
-            current total score, how many times they have gotten a word wrong
-            and right. As well as a nice message congratulating the user for
-            right answers.
-          </p>
-          <h3>Tech Used:</h3>
-          <img src="images/iconfinder_HTML_Logo_65687.png" alt="html5 logo" />
-          <img
-            class="css"
-            src="images/iconfinder_121-css3_4202020.png"
-            alt="css logo"
-          />
-          <img
-            class="js"
-            src="images/iconfinder_187_Js_logo_logos_4373691.png"
-            alt="javascript logo"
-          />
-          <img
-            src="images/iconfinder_React.js_logo_1174949.png"
-            class="react"
-            alt="react logo"
-          />
-          <img
-            src="images/iconfinder_postgresql_4691328.png"
-            class="postgres"
-            alt="postgres"
-          />
-
-          <div class="tech">
-            <p>
-              <a
-                class="live"
-                href="https://spaced-repetition-three.now.sh/"
-                target="_blank"
-                >Live Link</a
-              >
-            </p>
-            <p>
-              <a
-                class="repo"
-                href="https://github.com/thinkful-ei-macaw/SpacedRepition-server-VB"
-                target="_blank"
-                >Repo Link</a
-              >
-            </p>
-            <p>
-              <a
-                class="repo"
-                href="https://github.com/thinkful-ei-macaw/SpacedRepition-client-VB"
-                target="_blank"
-                >Repo Link</a
-              >
-            </p>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer id="fragment-3" class="content-info">
-      <h4>Contact</h4>
-      <div class="contacticons">
-        <a href="mailto:bpetit940@gmail.com"
-          ><img
-            alt="email"
-            src="images/http___pluspng.com_img-png_email-icon-png-circle-email-gmail-logo-mail-material-icon-download-png-512.png"
-            class="email"
-        /></a>
-        <a href="https://github.com/bpetit940" target="_blank"
-          ><img alt="github" src="images/GitHub-Mark-32px.png" class="github"
-        /></a>
-        <a href="https://www.linkedin.com/in/brannenpetit/" target="_blank"
-          ><img alt="linkedin" src="images/LI-In-Bug.png" class="github"
-        /></a>
       </div>
-    </footer>
-    <script src="index.js"></script>
-  </body>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="experience">
+          <div class="experience__items">
+            <div class="card">
+              <h3 class="card__title">Cuttlesoft Remote (St. Paul, MN)</h3>
+              <p class="card__subtitle">Software Engineer | Jan 2022 - Present</p>
+              <ul class="card__details">
+                <li>
+                  Interchanging between frameworks to create multiple projects ranging from bioinformatics reporting applications in React.js/Python to a cell tower mapping tool using MapBox and React.js and supporting development on a black label car reservation application utilizing Ruby on Rails and Angular.js.
+                </li>
+                <li>
+                  Working in an agile, team-based development process to best-fit requests from clients to assist in achieving their personalized software vision.
+                </li>
+                <li>
+                  Utilizing technology trends to better serve clients and provide an excellent post-development experience.
+                </li>
+                <li>
+                  Supporting projects through CI/CD pipelines like Docker and CircleCI and leading projects with test-driven development.
+                </li>
+                <li>
+                  Tech: Ruby on Rails, Python, Angular.js, React.js (Typescript & Javascript), Next.js, HTML, CSS, Tailwind, Postgres, Docker, CircleCI, GitHub actions, AWS.
+                </li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3 class="card__title">Locus Health Remote (Charlottesville, VA)</h3>
+              <p class="card__subtitle">Software Engineer | June 2021 - Jan 2022</p>
+              <ul class="card__details">
+                <li>
+                  Developing solutions for health care system care using a combination of multiple Ruby on Rails applications, integrated with front-end client applications in Vue.js.
+                </li>
+                <li>
+                  Maintaining and continuing to improve codebase through innovative ideas to create more efficient applications that serve users.
+                </li>
+                <li>
+                  Brainstorming, planning, and executing on new and competitive features within our codebase to better serve the healthcare space effectively.
+                </li>
+                <li>
+                  Working in an agile, team-based development process, with high levels of communication, collaboration, and support throughout the team.
+                </li>
+                <li>
+                  Tech: Ruby on Rails, Javascript, MySql, HTML, CSS, Vue.js, Rspec.
+                </li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3 class="card__title">TaskSuite Austin, TX</h3>
+              <p class="card__subtitle">Software Engineer | Aug 2020 - May 2021</p>
+              <ul class="card__details">
+                <li>
+                  Developing client solutions using Odoo/MV* framework, integrating with custom Front-end React applications.
+                </li>
+                <li>
+                  Maintaining cloud-hosted client applications using Proxmox.
+                </li>
+                <li>
+                  Producing innovative ideas within the CRM workspace to further client satisfaction and growth of the company.
+                </li>
+                <li>
+                  Working within teams to effectively problem solve and create a seamless workflow.
+                </li>
+                <li>
+                  Enhancing current code base with testing and agile style development process and integrating with 3rd party APIs.
+                </li>
+                <li>
+                  Tech: Javascript, Python, Odoo, XML, Postgres, React.js.
+                </li>
+              </ul>
+            </div>
+            <!-- Add more experience cards as needed -->
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="projects">
+          <div class="projects__items">
+            <div class="card">
+              <h3 class="card__title">Clear Mind</h3>
+              <img src="images/dash2.png" alt="Clear Mind App" class="card__image">
+              <p class="card__description">
+                Explore your feelings and thoughts with daily journals and personal data tracking. This digital journaling application allows users to keep track of daily tasks, record inner thoughts, encourage mindful acts, and track sleep and emotional patterns. Upon submitting a journal entry, the user's dashboard will update to display emotion and sleep data, allowing the user to see a visual representation of their progress over time. The user can use the calendar on the mindfulness center page to navigate to a specific day's journal and update entries to their liking.
+              </p>
+              <div class="card__tech">
+                <img src="images/iconfinder_HTML_Logo_65687.png" alt="HTML5" class="card__tech-icon">
+                <img src="images/iconfinder_121-css3_4202020.png" alt="CSS3" class="card__tech-icon">
+                <img src="images/iconfinder_187_Js_logo_logos_4373691.png" alt="JavaScript" class="card__tech-icon">
+                <img src="images/iconfinder_React.js_logo_1174949.png" alt="React.js" class="card__tech-icon">
+                <img src="images/iconfinder_postgresql_4691328.png" alt="PostgreSQL" class="card__tech-icon">
+              </div>
+              <div class="card__links">
+                <a href="https://clear-mind.now.sh/" class="card__link" target="_blank">Live Link</a>
+                <a href="https://github.com/thinkful-ei-macaw/clear-awareness-api" class="card__link" target="_blank">Repo Link</a>
+                <a href="https://github.com/thinkful-ei-macaw/clear-awareness-client" class="card__link" target="_blank">Repo Link</a>
+              </div>
+            </div>
+            <div class="card">
+              <h3 class="card__title">NuutrEd</h3>
+              <img src="images/NDcaloricchart.PNG" alt="NuutrEd App" class="card__image">
+              <p class="card__description">
+                This application helps users get a better understanding of how many calories they should be eating in a day based upon basic biometric and activity information. This app provides mutliple charts set to different performance goals with corresponding caloric expenditures, as well as allows users to track their weight using a weight graph.
+              </p>
+              <div class="card__tech">
+                <img src="images/iconfinder_HTML_Logo_65687.png" alt="HTML5" class="card__tech-icon">
+                <img src="images/iconfinder_121-css3_4202020.png" alt="CSS3" class="card__tech-icon">
+                <img src="images/iconfinder_187_Js_logo_logos_4373691.png" alt="JavaScript" class="card__tech-icon">
+                <img src="images/iconfinder_React.js_logo_1174949.png" alt="React.js" class="card__tech-icon">
+                <img src="images/iconfinder_postgresql_4691328.png" alt="PostgreSQL" class="card__tech-icon">
+              </div>
+              <div class="card__links">
+                <a href="https://nuutred.now.sh/" class="card__link" target="_blank">Live Link</a>
+                <a href="https://github.com/thinkful-ei-macaw/nutred-server" class="card__link" target="_blank">Repo Link</a>
+                <a href="https://github.com/thinkful-ei-macaw/nutred-client" class="card__link" target="_blank">Repo Link</a>
+              </div>
+            </div>
+            <div class="card">
+              <h3 class="card__title">Spaced Repetition Language App</h3>
+              <img src="images/spaced-repetition-three.now.sh_.png" alt="Language App" class="card__image">
+              <p class="card__description">
+                This is a Spanish translator app that has been produced utilizing a linked list data structure and a specific algorithm mentioned above. The user will see the words you get wrong more often to get more practice with more difficult words. The user can see their current total score, how many times they have gotten a word wrong and right. As well as a nice message congratulating the user for right answers.
+              </p>
+              <div class="card__tech">
+                <img src="images/iconfinder_HTML_Logo_65687.png" alt="HTML5" class="card__tech-icon">
+                <img src="images/iconfinder_121-css3_4202020.png" alt="CSS3" class="card__tech-icon">
+                <img src="images/iconfinder_187_Js_logo_logos_4373691.png" alt="JavaScript" class="card__tech-icon">
+                <img src="images/iconfinder_React.js_logo_1174949.png" alt="React.js" class="card__tech-icon">
+                <img src="images/iconfinder_postgresql_4691328.png" alt="PostgreSQL" class="card__tech-icon">
+              </div>
+              <div class="card__links">
+                <a href="https://spaced-repetition-three.now.sh/" class="card__link" target="_blank">Live Link</a>
+                <a href="https://github.com/thinkful-ei-macaw/SpacedRepition-server-VB" class="card__link" target="_blank">Repo Link</a>
+                <a href="https://github.com/thinkful-ei-macaw/SpacedRepition-client-VB" class="card__link" target="_blank">Repo Link</a>
+              </div>
+            </div>
+            <!-- Add more project cards as needed -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <footer class="contact">
+        <h4 class="contact__title">Contact</h4>
+        <div class="contact__icons">
+          <a href="mailto:bpetit940@gmail.com">
+            <img alt="email" src="images/http___pluspng.com_img-png_email-icon-png-circle-email-gmail-logo-mail-material-icon-download-png-512.png" class="contact__icon" />
+          </a>
+          <a href="https://github.com/bpetit940" target="_blank">
+            <img alt="github" src="images/GitHub-Mark-32px.png" class="contact__icon" />
+          </a>
+          <a href="https://www.linkedin.com/in/brannenpetit/" target="_blank">
+            <img alt="linkedin" src="images/LI-In-Bug.png" class="contact__icon" />
+          </a>
+        </div>
+      </footer>
+    </section>
+  </main>
+
+  <script src="index.js"></script>
+</body>
 </html>

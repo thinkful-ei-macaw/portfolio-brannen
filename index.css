@@ -1,347 +1,339 @@
-* {
-    box-sizing: border-box;
-  }
-
-html {
-    background-color: #8abfa6; 
-}
-body {
-    display:flex;
-    flex-direction: column;
-    font-family: "Open Sans",
-    sans-serif; 
-    font-size: 20px;
-    text-align: center;
-    line-height: 1.5;
-    font: #1b262c;
-  }
-  
-.skills h2 {
-  font-size: 25px;
-}
-.tech {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-
-
-nav,
-footer {
-    padding: 1% 0;
-    background-color: #0c3b40;
-    color: #ffd082;
-  }
-
-footer>a{
-  color: #ffd082;
-}
-
-.navblock {
-  position:fixed;
-}
-.nav {
-  position: fixed;
-  background: #ffd082;
-  color: #8abfa6;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  z-index: 100;
-  transform: translateX(100%);
-  transition: transform 250ms cubic-bezier(0.5, 0, 0.5, 1);
-}
-.nav__link {
-  color:#ffd082;
-  font-weight: var(--fw-bold);
-  font-size: 25px;
-  text-decoration: none;
-}
-.nav__link:hover {
-  color: var(--clr-accent);
-}
-.nav__list {
-  list-style: none;
-  display: flex;
-  height: 100%;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
+/* Reset styles */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
-}
-.logo {
-  max-width: 100px;
-}
-.nav-toggle {
-  
-  padding: 1em;
-  font-size: var(--fs-body);
-  border: 2px soild var(--clr-accent);
-  border-radius: 0.5em;
-  cursor: pointer;
-  position: fixed;
-  right: 1em;
-  top: 1em;
-  z-index: 1000;
-}
-.nav-toggle:hover {
-  background: #ffd082;
-  
-}
-.nav-open .nav {
-  transform: translateX(0);
-  background:#0c3b40;
-}
-.nav-open .nav-toggle {
-  position: fixed;
-}
-/* hamburger */
-.nav-open .hamburger {
-  transform: rotate(0.625turn);
-}
-.nav-open .hamburger::before {
-  transform: rotate(90deg) translateX(-6px);
-}
-.nav-open .hamburger::after {
-  opacity: 0;
-}
-.hamburger {
-  display: block;
-  position: relative;
-}
-.hamburger,
-.hamburger::before,
-.hamburger::after {
-  background: var(--clr-accent);
-  transition: transform 250ms ease-in-out;
-}
-.hamburger::before,
-.hamburger::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-}
-.hamburger::before {
-  top: 6px;
-}
-.hamburger::after {
-  bottom: 6px;
-}
-@media (max-width: 420px) {
-  .nav-toggle {
-    padding: 0.25em;
-    margin-bottom: 5em;
-  }
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
-header {
-    padding: 12% 0;
-    display: block;
-    padding-right: 20px;
-    padding-left: 20px;
-    font-family: 'Dosis';
-    
-  }
-
-.app {
-  display:flex;
-  flex-direction: column;
-  align-content: center;
-}
-  
-section {
-    min-height: 200px;
-    padding:20px;
-    background-color: #f2a341;
-    font-family: 'Kanit'
-  }
-  
-section:nth-child(even) {
-    background-color: #c1d9c7;
-  }
-
-.live, .repo {
-  color: #002517;
+/* Global styles */
+body {
+  font-family: 'Dosis', sans-serif;
+  line-height: 1.6;
+  color: #333;
 }
 
-.repo:nth-child(odd){
-  color: #172617;
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-.live:nth-child(odd){
-  color: #172617;
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Kanit', sans-serif;
+  margin-bottom: 10px;
 }
 
-#head-image {
-    margin-top: 30px;;
+p {
+  margin-bottom: 15px;
 }
 
-#head-image, .app-image {
-    height: 200px;
-    width: 200px;
-    border-radius: 10px;
-  }
-
-.bio {
-    font-size: 16px;
-    text-align: center;
-    font-family: 'Kanit'
-    
-}
-
-.app-description {
-    text-align: left;
-    
-    font-family: 'Dosis';
-}
-
-.github, .email {
-    height: 45px;
-}
-
-h1 {
-    margin-bottom: 70px;
-    font-size: 20px;
-    word-wrap: break-word;   
-}
-h2 {
-    margin-top: 50px;
-}
-
-.aboutme, .Projects, .Contact {
+a {
+  color: #007bff;
   text-decoration: none;
-  border: none;
-  margin: 3px;
-      border-radius: 5px;
-      font-size: 17px;
-      padding: 3px 6px;
-      font-family: 'Kanit';
-      background-color: #c1d9c7;
 }
 
-.contacticons {
+/* Navbar */
+.navbar {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
 }
 
-@media (max-width: 375px) {
+.navbar__logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar__toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.navbar__hamburger {
+  display: block;
+  width: 20px;
+  height: 3px;
+  background: #333;
+  margin: 3px 0;
+}
+
+.navbar__menu {
+  display: flex;
+  list-style: none;
+}
+
+.navbar__item {
+  margin-left: 20px;
+}
+
+.navbar__link {
+  color: #333;
+  text-decoration: none;
+}
+
+/* About section */
+#about-me {
+  padding: 50px 50px;
+}
+
+.about__title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about__content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.about__bio {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.about__image {
+  max-width: 300px;
+  border-radius: 50%;
+}
+
+.about__skills {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  margin-bottom: 30px;
+}
+
+.about__skills div {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.about__skills h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* Experience section */
+.experience__item {
+  margin-bottom: 30px;
+}
+
+.experience__item h3 {
+  margin-bottom: 10px;
+}
+
+.experience__item p {
+  color: #777;
+  margin-bottom: 5px;
+}
+
+.experience__item ul {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.section__title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.experience {
+  display: flex;
+  overflow-x: auto;
+  padding-bottom: 20px;
+}
+
+.experience__items {
+  display: flex;
+  gap: 30px;
+}
+
+.projects {
+  display: flex;
+  overflow-x: auto;
+  padding-bottom: 20px;
+}
+
+.projects__items {
+  display: flex;
+  gap: 30px;
+}
+
+.card {
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 30px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card__title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card__subtitle {
+  font-size: 16px;
+  color: #888888;
+  margin-bottom: 15px;
+}
+
+.card__details {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 0;
+  padding-left: 0;
+  text-align: left;
+}
+
+.card__details li {
+  margin-bottom: 10px;
+}
+
+.card__image {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.card__tech {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.card__tech-icon {
+  width: 24px;
+}
+
+.card__links {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.card__link {
+  display: inline-block;
+  margin-right: 10px;
+  color: #000000;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.card__link:last-child {
+  margin-right: 0;
+}
+
+/* Projects section */
+.project {
+  margin-bottom: 40px;
+}
+
+.project__image {
+  max-width: 100%;
+  max-height: 300px;
+  margin-bottom: 20px;
+}
+
+.project__title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.project__image {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.project__description {
+  margin-bottom: 10px;
+}
+
+.project__tech {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.project__tech img {
+  height: 30px;
+  margin-right: 10px;
+}
+
+.project__links a {
+  margin-right: 10px;
+}
+
+/* Contact section */
+.contact {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contact__title {
+  margin-bottom: 10px;
+}
+
+.contact__icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.contact__icon {
+  width: 30px;
+  margin: 0 5px;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  .navbar__toggle {
+    display: block;
+  }
   
-  .tech {
-    margin: 0;
+  .navbar__menu {
+    display: none;
   }
 
+  .navbar__item {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
 
+  .about__content {
+    flex-direction: column;
+  }
+
+  .about__image {
+    margin-top: 20px;
+  }
 }
-@media (min-width: 768px) {
-    header {
-      grid-template-columns: 375px 370px;
-      
-    }
-  
-    h1 {
-      font-size: 35px;
-    }
-  
-    #head-shot {
-      width: 350px;
-    }
-  
-    .bio {
-      font-size: 25px;
-      padding: 10px;
-    }
-  
-    .app-image {
-      width: 250px;
-      height: 250px;
-    }
-  
-    section {
-      grid-template-columns: 375px 375px;
-      justify-content: space-around;
-    }
-  
-    h2 {
-      font-size: 30px;
-    }
-  
-    h3{
-      font-size: 25px;
-    }
-
-    .app-description {
-        font-size: 20px;
-        font: bold'
-    }
-} 
-  
-
-  @media (min-width: 1200px) {
-
-    .me {
-      display: flex;
-      flex-direction: column;
-    }
-    header {
-     display: block;
-     
-    }
-  
-    h1 {
-      font-size: 35px;
-    }
-    h3 {
-        padding: 20px;
-    }
-  
-    #head-image {
-      width: 350px;
-      height: 400px;
-      
-      
-    }
-  
-    .bio {
-      font-size: 30px;
-      padding: 15px;
-      width: 1000px;
-      margin:auto;
-    
-    }
-
-    .skills {
-      font-size: 25px;
-    }
-
-    .app-description {
-        width: 1000px;
-        padding-right: 25px;
-        margin: auto
-    }
-  
-  
-    section {
-      display: block;
-      align-content: center;
-    }
-    
-    .app-image {
-      /* float: right; */
-      width: 400px;
-      height: 400px;
-    }
-
-    .email, .linkedin, .github {
-        height: 24px;
-        justify-content: space-evenly;
-    }
-
-    p {
-        padding: 20px;
-    }
-  }   
